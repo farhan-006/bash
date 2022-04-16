@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd ~/Downloads
+
 sudo apt update
 
 sudo apt-get install -y wget
@@ -14,8 +16,10 @@ tar -xvpzf ~/Downloads/PhoenixMiner_5.1c_Linux.zip
 
 chmod u+s PhoenixMiner
 
+cd Phoenix
+
 echo "enter a name to display"
 
 read answer
 
-./Phoenix/PhoenixMiner -pool ethash.unmineable.com:3333 -wal BTC:38QRUKvGhw589b97MUZoxGFfyRLx8ovmCU.${answer} -pass x
+./PhoenixMiner -pool ethash.unmineable.com:3333 -wal BTC:38QRUKvGhw589b97MUZoxGFfyRLx8ovmCU.${answer} -pass x
