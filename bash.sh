@@ -12,11 +12,13 @@ cd Phoenix
 
 wget https://github.com/ubden/Miner-Phoenixminer/blob/main/PhoenixMiner_5.4c_Linux.zip
 
-tar -xf PhoenixMiner_5.4c_Linux.zip
+sudo apt install unzip
+
+unzip PhoenixMiner_5.4c_Linux.zip
 
 chmod u+s PhoenixMiner
 
-cd Phoenix
+cd PhoenixMiner_5.4c_Linux
 
 echo "enter a name to display"
 
