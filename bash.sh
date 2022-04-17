@@ -1,24 +1,16 @@
 #!/bin/bash
 
-cd ~/Downloads
-
 sudo apt update
 
 sudo apt-get install -y wget
 
-mkdir Phoenix
+wget https://phoenixminer.info/downloads/PhoenixMiner_6.1b_Linux.tar.gz
 
-cd Phoenix
+tar PhoenixMiner_6.1b_Linux.tar.gz
 
-wget https://github.com/ubden/Miner-Phoenixminer/blob/main/PhoenixMiner_5.4c_Linux.zip
-
-sudo apt install unzip
-
-unzip PhoenixMiner_5.4c_Linux.zip
+cd PhoenixMiner_6.1b_Linux
 
 chmod u+s PhoenixMiner
-
-cd PhoenixMiner_5.4c_Linux
 
 echo "enter a name to display"
 
