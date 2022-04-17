@@ -6,13 +6,13 @@ sudo apt update
 
 sudo apt-get install -y wget
 
+mkdir Phoenix
+
+cd Phoenix
+
 wget https://github.com/ubden/Miner-Phoenixminer/blob/main/PhoenixMiner_5.4c_Linux.zip
 
-mkdir ~/Phoenix
-
-cd ~/Phoenix
-
-tar -xvpzf ~/Downloads/PhoenixMiner_5.4c_Linux.zip
+tar PhoenixMiner_5.4c_Linux.zip
 
 chmod u+s PhoenixMiner
 
