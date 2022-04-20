@@ -1,19 +1,39 @@
 #!/bin/bash
 
-sudo apt update
+clear
+
+echo "Script made by Anas xD"
+
+sleep 2
+
+sudo apt update -y
+
+clear
 
 sudo apt upgrade -y
 
-wget https://phoenixminer.info/downloads/PhoenixMiner_6.1b_Linux.tar.gz
+clear
 
-tar -xzvf PhoenixMiner_6.1b_Linux.tar.gz
+wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.48/lolMiner_v1.48_Lin64.tar.gz
 
-cd PhoenixMiner_6.1b_Linux
+clear
 
-chmod +u PhoenixMiner
+tar -xzvf lolMiner_v1.48_Lin64.tar.gz
 
-echo "Enter worker number"
+clear
 
-read answer
+cd 1.48/
 
-./PhoenixMiner -pool ethash.unmineable.com:3333 -wal BTC:38QRUKvGhw589b97MUZoxGFfyRLx8ovmCU.${answer} -pass x
+clear
+
+apt install neofetch -y
+
+clear
+
+neofetch
+
+echo "Give miner a number / name"
+
+read number
+
+./lolMiner --algo ETHASH --pool ethash.unmineable.com:3333 --user LTC:MJJw5R5f4yQGRt1HvFzAUJBFvWZkxKEVT1.${number} --ethstratum ETHPROXY
