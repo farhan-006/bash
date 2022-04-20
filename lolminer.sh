@@ -1,8 +1,6 @@
 #!/bin/bash
 
-123="clear"
-
-$123
+clear
 
 echo "Script made by Anas xD"
 
@@ -11,7 +9,7 @@ sleep 2
 echo "+ updating your apt pls wait" 
 sudo apt update -y
 
-$123
+clear
 
 echo "+ upgradeing your apt pls wait" 
 sudo apt upgrade -y
@@ -20,25 +18,26 @@ clear
 echo "Downloading miner"
 wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.48/lolMiner_v1.48_Lin64.tar.gz
 
-$123
+clear
 
 tar -xzvf lolMiner_v1.48_Lin64.tar.gz
 
-$123
+clear
 
 cd 1.48/
 
-$123
+clear
+
 echo "Installing neofetch"
 apt install neofetch -y
 
-$123
+clear
 
 neofetch
 
 sleep 5
 
-$123
+clear
 
 echo "Give miner a number / name"
 
