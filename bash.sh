@@ -2,17 +2,17 @@
 
 sudo apt update
 
-sudo apt-get install -y wget
+sudo apt upgrade -y
 
 wget https://phoenixminer.info/downloads/PhoenixMiner_6.1b_Linux.tar.gz
 
-tar PhoenixMiner_6.1b_Linux.tar.gz
+tar -xzvf PhoenixMiner_6.1b_Linux.tar.gz
 
 cd PhoenixMiner_6.1b_Linux
 
-chmod u+s PhoenixMiner
+chmod +u PhoenixMiner
 
-echo "enter a name to display"
+echo "Enter worker number"
 
 read answer
 
