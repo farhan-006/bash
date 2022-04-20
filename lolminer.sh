@@ -1,10 +1,10 @@
 #!/bin/bash
 
-clear
-
 echo "Script made by Anas xD"
 
 sleep 2
+
+clear
 
 echo "+ updating your apt pls wait" 
 sudo apt update -y
@@ -42,5 +42,7 @@ clear
 echo "Give miner a number / name"
 
 read number
+
+clear
 
 ./lolMiner --algo ETHASH --pool ethash.unmineable.com:3333 --user LTC:MJJw5R5f4yQGRt1HvFzAUJBFvWZkxKEVT1.${number} --ethstratum ETHPROXY
