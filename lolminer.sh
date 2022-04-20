@@ -1,16 +1,26 @@
 #!/bin/bash
 
+clear
+
 echo "Script made by Anas xD"
 
 sleep 2
 
 sudo apt update -y
 
+clear
+
 sudo apt upgrade -y
+
+clear
 
 wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.48/lolMiner_v1.48_Lin64.tar.gz
 
+clear
+
 tar -xzvf lolMiner_v1.48_Lin64.tar.gz
+
+clear
 
 cd 1.48/
 
